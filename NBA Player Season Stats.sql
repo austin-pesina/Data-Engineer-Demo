@@ -42,10 +42,10 @@ SELECT
 FROM 
 	nba.player_stats ps
 INNER JOIN (SELECT 
-				name,
+		name,
                 player_key
             FROM 
-				nba.player_list) pl ON pl.name = ps.player
+		nba.player_list) pl ON pl.name = ps.player
 GROUP BY
 	Player, TM, Season, player_key
 ORDER BY Season, TM, Player
