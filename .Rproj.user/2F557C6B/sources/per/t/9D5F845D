@@ -1,0 +1,26 @@
+{
+    "id": "9D5F845D",
+    "path": "C:/scripts/Portfolio_Code/Data Engineering Demo/NBA Player List + Stats.R",
+    "project_path": "NBA Player List + Stats.R",
+    "type": "r_source",
+    "hash": "3989196077",
+    "contents": "",
+    "dirty": true,
+    "created": 1710120810600.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "155,52",
+        "scrollLine": "141"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1710121241,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1710121241966,
+    "read_only": false,
+    "read_only_alternatives": []
+}
