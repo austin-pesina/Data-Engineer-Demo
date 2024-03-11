@@ -22,9 +22,9 @@ SELECT
     Player, pl.player_key, TM,
     SUM(FG) AS Total_FG, SUM(FGA) AS Total_FGA, 
     CASE
-		WHEN SUM(FGA) = 0 THEN NULL
+	WHEN SUM(FGA) = 0 THEN NULL
         ELSE ROUND((SUM(FG)/SUM(FGA))*100,2)
-	END AS `FG%`,
+    END AS `FG%`,
     SUM(`3P`) as Total_3P, SUM(`3PA`) AS Total_3PA, 
     CASE
 		WHEN SUM(`3PA`) = 0 THEN NULL
@@ -32,9 +32,9 @@ SELECT
 	END AS `3P%`,
     SUM(FT) AS Total_FT, SUM(FTA) AS Total_FTA, 
     CASE
-		WHEN SUM(FTA) = 0 THEN NULL
+	WHEN SUM(FTA) = 0 THEN NULL
         ELSE ROUND((SUM(FT)/SUM(FTA))*100,2) 
-	END AS `FT%`,
+    END AS `FT%`,
     SUM(ORB) AS Total_ORB, SUM(DRB) AS Total_DRB, SUM(TRB) AS Total_RB,
     SUM(AST) AS Total_AST, SUM(STL) AS Total_STL,
     SUM(BLK) AS Total_BLK, SUM(TOV) AS Total_TOV,
