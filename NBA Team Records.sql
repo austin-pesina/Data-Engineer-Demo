@@ -14,9 +14,9 @@ WITH game_results AS (
         Opp, 
         LEFT(result, 1) AS Result,
         CASE
-			WHEN Date BETWEEN '2021-10-19' AND '2022-06-16' THEN '2021-22'
+	    WHEN Date BETWEEN '2021-10-19' AND '2022-06-16' THEN '2021-22'
             WHEN Date BETWEEN '2022-10-18' AND '2023-06-12' THEN '2022-23'
-		END AS Season
+	END AS Season
 	FROM nba.player_stats
 )
 SELECT 
@@ -29,7 +29,7 @@ SELECT
 	SUM(CASE
 		WHEN Result = 'L' THEN 1
 		ELSE 0
-		END) AS Losses
+	     END) AS Losses
 FROM game_results res
 INNER JOIN nba.teams on teams.abbr = res.TM
 GROUP BY teams.full_team_name, res.Season
